@@ -1,0 +1,26 @@
+<div>
+	<div class="alert-success">{{successmessage}}</div>
+	<div class="alert-danger">{{errormessage}}</div>
+	<h2>
+		Add Product
+		<h2>
+			<select ng-model="selectedBeacon" >
+				<!-- <option ng-selected="true" disabled>
+            -- Select Beacon --
+       			 </option> -->
+				 <option ng:repeat="beacon in beacons" value="{{beacon.beaconid}}">{{beacon.name}}</option>
+			</select> 
+			
+			<input type="text" placeholder="Beacon ID" ng-model="beaconid" /> <input
+				type="text" placeholder="ID" ng-model="id" /> <input type="text"
+				placeholder="Name" ng-model="name" /> <input type="text"
+				placeholder="Price" ng-model="price" /> <input type="text"
+				placeholder="Quantity" ng-model="quantity">
+			<div class="ngdialog-buttons">
+				<button type="button"
+					class="ngdialog-button ngdialog-button-secondary"
+					ng-click=closethis();closeThisDialog("Cancel")>Cancel</button>
+				<button type="button"
+					class="ngdialog-button ngdialog-button-primary" ng-click=confirm("OK")>OK</button>
+			</div>
+</div>

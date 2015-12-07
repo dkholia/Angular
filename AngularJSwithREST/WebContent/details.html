@@ -1,0 +1,12 @@
+<div>
+	<h2>
+		Product Details for {{id}}:{{name}}
+		<h2>
+			<label ng-model="id" >ID: {{id}}</label> <br><label ng-model="name" >Name : {{name}}</label><br> <label ng-model="price" >Price : {{price}}</label> <br>
+			<label ng-model="quantity">Quantity: {{quantity}}</label>
+			<div class="ngdialog-buttons">
+				
+				<button type="button"
+					class="ngdialog-button ngdialog-button-primary" ng-click='closeThisDialog("Cancel")'>Close</button>
+			</div>
+</div>

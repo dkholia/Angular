@@ -1,0 +1,28 @@
+<div class="container">
+    <h3>Edit Product Information</h3>
+	<table>
+		<tr>
+			<td>Id</td>
+			<td><input type="text" ng-model="id" /></td>
+		</tr>
+		<tr>
+			<td>Name</td>
+			<td><input type="text" ng-model="name" /></td>
+		</tr>
+		<tr>
+			<td>Price</td>
+			<td><input type="text" ng-model="price" /></td>
+		</tr>
+		<tr>
+			<td>Quantity</td>
+			<td><input type="text" ng-model="quantity" /></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><input type="button" value="Save" ng-click="edit()" /> </td>
+		</tr>
+	</table>
+	 <a href="#/home"> Back to list</a>
+	 
+	 {{message}}
+</div>
