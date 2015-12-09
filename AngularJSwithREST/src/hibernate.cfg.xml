@@ -9,7 +9,8 @@
 		<property name="hibernate.connection.username">postgres</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
 		<property name="hibernate.current_session_context_class">thread</property>
-		<property name="hibernate.show.sql">false</property>
+		<property name="hibernate.show.sql">true</property>
 		<mapping class="orm.Product" />
+		<mapping class="orm.User" />
 	</session-factory>
 </hibernate-configuration>

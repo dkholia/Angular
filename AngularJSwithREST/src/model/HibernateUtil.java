@@ -7,6 +7,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
 import orm.Product;
+import orm.User;
 
 public class HibernateUtil {
     
@@ -17,6 +18,7 @@ public class HibernateUtil {
     /* All  SQL, DML entities must be registered */
     public static void registerBeans() {
         configuration.addAnnotatedClass(Product.class);
+        configuration.addAnnotatedClass(User.class);
     }
 
         private static SessionFactory buildSessionFactory() {

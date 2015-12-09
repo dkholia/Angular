@@ -1,4 +1,4 @@
-- Table: public."Product"
+-- Table: public."Product"
 
 -- DROP TABLE public."Product";
 
@@ -16,7 +16,7 @@ WITH (
 ALTER TABLE public."Product"
   OWNER TO postgres;
 
-  -- Constraint: product_pk
+-- Constraint: product_pk
 
 -- ALTER TABLE "Product" DROP CONSTRAINT product_pk;
 

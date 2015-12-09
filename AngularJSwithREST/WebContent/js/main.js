@@ -162,6 +162,7 @@ myapp.controller('productController', function($scope, $http, $rootScope,ngDialo
 		$rootScope.price = product.price;
 		$rootScope.quantity = product.quantity;
 	};
+	
 	$scope.add = function() {
 		
 		var dataObj = {

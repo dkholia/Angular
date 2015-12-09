@@ -3,6 +3,9 @@ package model;
 import entities.*;
 import java.io.*;
 import java.util.*;
+
+import javax.management.RuntimeErrorException;
+
 import org.hibernate.*;
 import org.hibernate.criterion.Example;
 
@@ -52,7 +55,7 @@ public abstract class AbstractModel<T> {
 			sessionFactory.getCurrentSession().getTransaction().commit();
 		} catch (RuntimeException re) {
 			sessionFactory.getCurrentSession().getTransaction().rollback();
-			throw re;
+			throw new RuntimeException(re.getMessage());
 		}
 	}
 
@@ -64,7 +67,7 @@ public abstract class AbstractModel<T> {
 			sessionFactory.getCurrentSession().getTransaction().commit();
 		} catch (RuntimeException re) {
 			sessionFactory.getCurrentSession().getTransaction().rollback();
-			throw re;
+			throw new RuntimeException(re.getMessage());
 		}
 	}
 

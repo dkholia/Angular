@@ -36,6 +36,7 @@ public class ProductRest {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/findalljson")
 	public List<orm.Product> findAllJSON(){
+		AngularLogger.getLogger(this.getClass()).debug("This is a sample message");
 		return this.pm.findAll();
 	}
 	
