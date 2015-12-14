@@ -10,6 +10,10 @@ myapp.config(function($routeProvider) {
 		templateUrl: 'productDetails.html',
 		controller: 'productController'
 	})
+	.when('/userRegister', {
+		templateUrl: 'registeruser.html',
+		controller: 'userController'
+	})
 	.otherwise({
 		redirectTo: '/home'
 	});
@@ -147,7 +151,7 @@ myapp.controller('productController', function($scope, $http, $rootScope,ngDialo
 			$scope.quantity = '';
 		});
 		res.error(function(response) {
-			alert("Failed to delete");
+			alert("Failed to delete " + response);
 		})
 
 		}
