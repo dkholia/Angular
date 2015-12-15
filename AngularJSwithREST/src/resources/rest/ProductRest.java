@@ -76,7 +76,7 @@ public class ProductRest {
 	
 	public static void main(String[] args) {
 		ProductRest ws = new ProductRest();
-		Product p = ws.pm.find("B9407F30-F5F8-466E-AFF9-25556B57FE6D_10959_4915");
+		Product p = ws.pm.find("12345");
 		 System.out.println(p);
 	}
 }
