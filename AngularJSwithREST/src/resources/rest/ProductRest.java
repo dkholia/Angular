@@ -21,7 +21,7 @@ import model.ProductModel;
 import orm.Product;
 
 @Path("product")
-public class ProductRest {
+public class ProductResty {
 	
 	static final Logger logger  =  Logger.getLogger(ProductRest.class.getName());
 	private ProductModel  pm = new ProductModel();
