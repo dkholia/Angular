@@ -18,6 +18,7 @@ import orm.Beacon;
 public class BeaconRest {
 	private BeaconModel bm = new BeaconModel();
 	
+	//Deep
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Beacon> findAll(){
